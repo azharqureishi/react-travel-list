@@ -3,7 +3,7 @@ import React from "react";
 function Item({ item, onDeleteItems, onToggleItems }) {
   return (
     <div>
-      <li className=" flex items-center justify-start min-w-full text-base font-sans text-white mx-2 px-3">
+      <li className=" flex items-center justify-start min-w-full text-xl font-sans text-white mx-2 px-3">
         <input
           type="checkbox"
           className=" cursor-pointer"

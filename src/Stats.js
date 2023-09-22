@@ -12,7 +12,7 @@ function Stats({ items }) {
   console.log(packedItems);
   const percentage = Math.round((packedItems / numItems) * 100);
   return (
-    <footer className=" h-16 bg-teal-500 flex items-center justify-center  font-semibold text-lg">
+    <footer className=" h-20 py-11 bg-teal-500 flex items-center justify-center  font-semibold text-lg">
       <em>
         {percentage === 100
           ? "You got everything! Ready to go ✈"

@@ -21,7 +21,11 @@ function App() {
         item.id === id ? { ...item, packed: !item.packed } : item
       )
     );
-    console.log(items);
+  }
+
+  function handleClearList() {
+    const confirmed = window.confirm("Are you sure to delete all items ?");
+    if (confirmed) setItems([]);
   }
 
   return (
@@ -32,6 +36,7 @@ function App() {
         items={items}
         onDeleteItems={handleDeleteItems}
         onToggleItems={handleToggleItems}
+        onClearList={handleClearList}
       />
       <Stats items={items} />
     </div>
