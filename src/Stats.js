@@ -3,7 +3,7 @@ import React from "react";
 function Stats({ items }) {
   if (!items.length)
     return (
-      <em className=" h-16 bg-teal-400 flex items-center justify-center  font-semibold text-lg">
+      <em className=" h-20 py-11 bg-teal-400 flex items-center justify-center  font-semibold text-lg">
         <p>Start adding some items to your packing list 🚀</p>
       </em>
     );
